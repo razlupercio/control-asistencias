@@ -75,7 +75,7 @@ return [
             /*
              * Whether or not the register route and view are active
              */
-            'registration' => env('ENABLE_REGISTRATION', true),
+            'registration' => env('ENABLE_REGISTRATION', false),
 
             /*
              * When active, a user can only have one session active at a time
@@ -147,6 +147,9 @@ return [
          * Commenting out languages will make them unavailable to the user
          */
         'languages' => [
+            'es' => ['name' => 'Español', 'rtl' => false],
+            'en' => ['name' => 'English', 'rtl' => false]
+/*
             'ar' => ['name' => 'Arabic', 'rtl' => true],
             'az' => ['name' => 'Azerbaijan', 'rtl' => false],
             'zh' => ['name' => 'Chinese Simplified', 'rtl' => false],
@@ -176,6 +179,7 @@ return [
             'tr' => ['name' => 'Turkish', 'rtl' => false],
             'uk' => ['name' => 'Ukrainian', 'rtl' => false],
             'vi' => ['name' => 'Vietnam', 'rtl' => false],
+*/
         ],
     ],
 
